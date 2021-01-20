@@ -24,7 +24,7 @@ a:hover{
 /*                      HEADER                        */
 
 #cover {
-  background: url('../images/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  background: url(images/wedding-landing-cover.png) no-repeat 70% center/cover;
   text-align: center;
   display: table;
   height: 100vh;
@@ -32,7 +32,7 @@ a:hover{
 }
 
 @media (min-width:768px){
-  #cover: url('../images/wedding-landing-cover.jpg') no-repeat center/cover;
+  #cover: url(images/wedding-landing-cover.png) no-repeat center/cover;
 }
 
 
