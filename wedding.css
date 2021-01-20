@@ -13,6 +13,14 @@ footer background color: #606060
   box-sizing: border-box;
 }
 
+a{
+  color: #bd806e;
+}
+
+a:hover{
+  color: #eda087;
+}
+
 /*                      HEADER                        */
 
 #cover {
@@ -23,11 +31,17 @@ footer background color: #606060
   width: 100%;
 }
 
+@media (min-width:768px){
+  #cover: url('../images/wedding-landing-cover.jpg') no-repeat center/cover;
+}
+
+
 #startpage{
   display: table-cell;
   vertical-align: middle;
   line-height: 3rem;
 }
+
 
 #header-text{
   margin: 0 auto;
@@ -35,8 +49,15 @@ footer background color: #606060
   background-color: rgba(0,0,0,.5)
 }
 
+@media (min-width:768px){
+  #header-text{
+     width: 40%;
+  }
+}
+
+ 
 #header-text h3{
-  color: rgba(255,255,255,9);
+  color: rgba(255,255,255,.9);
   font-size: 1.5rem;
   letter-spacing: .1rem;
   font-family: 'Libre Baskerville', serif;
@@ -50,6 +71,13 @@ footer background color: #606060
   font-weight: 580;
 }
 
+@media (min-width:768px){
+  #header-text h1{
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+}
+
 #first-divider::after {
   display: block;
   content: "";
@@ -57,6 +85,12 @@ footer background color: #606060
   height: 1px;
   width: 70%;
   margin: .5rem auto;
+}
+
+@media (min-width:768px) {
+  #first-divider{
+    text-transform: uppercase;
+  }
 }
 
 #second-divider::before,
@@ -73,6 +107,7 @@ footer background color: #606060
 /*                   LOCATIONS                        */
 
 
+       
 #scenes{
   background: url('../images/wedding-landing-background.png') no-repeat center/cover;
   font-family: 'Libre Baskerville', serif;
@@ -110,6 +145,21 @@ footer background color: #606060
   background-color: #444349;
 }
 
+@media (min-width: 768px) {
+
+  .location {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .location::after {
+    display: none;
+  }
+
+}
+     
 
 /*                       PROGRAM                       */
 
@@ -129,7 +179,6 @@ footer background color: #606060
   font-family: Great vibes, cursive;
   font-size: 3.5rem;
   text-align: center;
-  margin-left: 2rem;
   padding: 2rem;
 }
 
@@ -142,4 +191,132 @@ footer background color: #606060
   padding-bottom: 2rem;
 }
 
+@media (min-width:768px){
+  #program{
+    text-align: center;
+    padding-top: 1rem;
+  }
+}
 
+/*                                  GIFTS                        */
+
+#gifts {
+  background: url('../images/wedding-landing-background.png') no-repeat center/cover;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  line-height: 1.5rem;
+  
+}
+
+#gifts h2{
+  font-family: Great vibes, cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+#gifts-content{
+  padding: 2rem;
+}
+
+#gifts-content img{
+  height: 8rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+#scenes-content h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/*               QUESTIONS AND ANSWERS                       */
+
+#questions{
+  background-color: rgba(0,0,0,.6);
+  color: #d2ba87;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.5rem;
+  padding: 2rem 0 2rem 0;
+  letter-spacing: .1rem;
+}
+
+#questions h2{
+  font-family: Great vibes, cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.question-block{
+  padding: 2rem 2rem 0 2rem;
+}
+
+.question-block h3{
+   font-size: 1rem;
+  
+}
+
+.question{
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
+.question-block::after{
+  display: block;
+  content: "";
+  background-color: #d2ba87;
+  height: 3px;
+  width: 70%;
+  margin: 2rem auto 0 auto;
+}
+
+@media (min-width: 768px) {
+
+  .question-block {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+  
+  .question-block::after{
+    display: none;
+  }
+}
+
+/*                              CONTACT                            */
+
+
+#contact{
+  background: url('../images/wedding-landing-background.png') no-repeat center/cover;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+#contact h2{
+  font-family: Great vibes, cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+#contact-content p{
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+/*                     FOOTER                              */
+
+footer p{
+  background-color: rgba(0,0,0,.6);
+  text-align:center;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
